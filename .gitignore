@@ -1,0 +1,15 @@
+# MNIST data — too large for git
+data/
+
+# Compiled binaries
+mlp
+grad_packed
+mpi_allreduce
+
+# Build artifacts
+*.o
+*.a
+
+# Editor/IDE files
+.vscode/
+*.swp
