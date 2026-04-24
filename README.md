@@ -108,7 +108,7 @@ epoch,loss,test_acc,fwd_s,bwd_s,sgd_s,epoch_s,grad_norm
 25,0.08,0.97,12.1,44.6,0.02,57.3,0.81
 ```
 
-Test accuracy should reach **>97%** by epoch 20–25. The `epoch_s` column
+Test accuracy should reach **>97%** by epoch 10. The `epoch_s` column
 is the single-node baseline used for computing speedup in later experiments.
 
 ---
@@ -216,7 +216,7 @@ epoch,loss,test_acc,fwd_s,bwd_s,allreduce_s,sgd_s,epoch_s,grad_norm,speedup,effi
 
 ### Correctness checks before moving on
 
-- `test_acc` at epoch 25 should be within ~0.5% of `grad_packed` single-node result
+- `test_acc` at epoch 10 should be within ~0.5% of `grad_packed` single-node result
 - `grad_norm` should be in the same ballpark as single-node
 - Loss curve should decrease smoothly with the same shape
 - At nranks=1 results should be nearly identical to `grad_packed`
