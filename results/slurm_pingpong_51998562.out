@@ -1,0 +1,47 @@
+=== Compiling ===
+Compiled: /pscratch/sd/a/anirudh6/cs5220/project/pingpong
+
+=== Running ping-pong benchmark ===
+date:   Fri Apr 24 10:59:01 AM PDT 2026
+host:   nid006375
+nodes:  2 (cross-node, --ntasks-per-node=1)
+
+Ping-pong benchmark on Perlmutter
+Rank 0 <-> Rank 1 (cross-node, --ntasks-per-node=1)
+REPS=100  WARMUP=20
+
+Results will be saved to: /pscratch/sd/a/anirudh6/cs5220/project/results/pingpong.csv
+
+bytes          half_rtt_us         bandwidth_GBps      
+-------------------------------------------------------
+1              3.517               0.000142167         
+2              3.517               0.000284333         
+4              3.537               0.000565451         
+8              3.507               0.00114058          
+16             3.5165              0.00227499          
+32             3.4965              0.004576            
+64             3.517               0.00909866          
+128            4.0575              0.0157733           
+256            4.2985              0.0297778           
+512            4.273               0.0599111           
+1024           4.3485              0.117742            
+4096           4.639               0.441474            
+16384          5.781               1.41706             
+65536          14.2525             2.29911             
+262144         23.3905             5.60364             
+1048576        55.748              9.40461             
+2097152        98.7815             10.6151             
+4194304        185.54              11.303              
+8388608        365.724             11.4685             
+11665160       502.424             11.6089             
+16777216       723.953             11.5872             
+33554432       1508.19             11.124              
+67108864       3133.5              10.7083             
+
+Done. Results saved to: /pscratch/sd/a/anirudh6/cs5220/project/results/pingpong.csv
+
+Next step: run fit_alpha_beta.py to extract alpha and beta.
+
+=== Done ===
+date: Fri Apr 24 10:59:03 AM PDT 2026
+Results saved to: /pscratch/sd/a/anirudh6/cs5220/project/results/pingpong.csv

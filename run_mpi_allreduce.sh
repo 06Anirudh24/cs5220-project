@@ -26,7 +26,7 @@ echo ""
 # ── Rank counts to sweep ───────────────────────────────────────────────────────
 # For initial correctness testing just use 1 and 2.
 # For scaling experiments use the full list: 1 2 4 8 16 32
-RANK_COUNTS=(1 2 4 8)
+RANK_COUNTS=(1 2 4 8 16 32)
 
 TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
 

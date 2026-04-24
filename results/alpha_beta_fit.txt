@@ -1,0 +1,19 @@
+Alpha-Beta Model Fit — Perlmutter Slingshot-11
+==================================================
+
+Method: split fit (alpha from <=512B, beta from >=1MB)
+
+alpha = 3.5170 us
+beta  = 0.044120 ns/byte
+bw    = 22.67 GB/s
+
+R^2 pingpong fit:    0.997295
+R^2 ring prediction: -2.342299
+
+Predicted vs Measured ring allreduce_s per epoch:
+  nranks         pred         meas     err%
+       2       0.1220       0.2461    50.4%
+       4       0.1854       0.5307    65.1%
+       8       0.2221       0.6618    66.4%
+      16       0.2503       0.8827    71.6%
+      32       0.2841       1.0653    73.3%

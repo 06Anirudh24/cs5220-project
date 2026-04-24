@@ -1,0 +1,36 @@
+=== Starting run: nranks=16 ===
+date:        Tue Apr 21 10:27:10 AM PDT 2026
+host:        nid004928
+nranks:      16
+binary:      /pscratch/sd/a/anirudh6/cs5220/project/mpi_allreduce
+outfile:     /pscratch/sd/a/anirudh6/cs5220/project/results/mpi_allreduce_nranks16_20260421_073146.out
+
+=== Training ===
+srun: warning: can't run 16 processes on 32 nodes, setting nnodes to 16
+Loading MNIST...
+Loaded.
+
+=== MPI_Allreduce run ===
+nranks:         16
+global_batch:   256
+local_batch:    16
+grad_buf_size:  will print after model init
+epochs:         10
+lr:             0.01
+momentum:       0.9
+
+grad_buf_size:  2913290 floats = 11.1133 MB
+
+epoch,loss,test_acc,fwd_s,bwd_s,allreduce_s,sgd_s,epoch_s,grad_norm,speedup,efficiency
+1,0.55151,0.9313,3.75298,11.8077,1.79318,0.56084,17.9189,0.945055,0,0
+2,0.235951,0.946,3.75229,11.7946,1.64487,0.551295,17.746,0.728515,0,0
+3,0.157011,0.957,3.7481,11.7901,1.6311,0.550617,17.7231,0.708364,0,0
+4,0.128533,0.9627,3.74941,11.7905,1.63156,0.591829,17.7659,0.804483,0,0
+5,0.0925266,0.9663,3.75038,11.7938,1.67014,0.590291,17.8076,0.682014,0,0
+6,0.0877487,0.9695,3.74775,11.7915,1.65248,0.591596,17.7859,0.631964,0,0
+7,0.072724,0.9714,3.75122,11.7947,1.62336,0.597364,17.7697,0.712566,0,0
+8,0.0682919,0.9735,3.75045,11.7976,1.64931,0.590523,17.7909,0.88901,0,0
+9,0.0480966,0.9764,3.75107,11.7937,1.64103,0.589428,17.7781,0.657134,0,0
+10,0.050998,0.9795,3.7478,11.7957,1.91363,0.591227,18.051,0.774729,0,0
+
+=== Done: nranks=16 ===

@@ -1,0 +1,115 @@
+=== Compiling ===
+Compiled: /pscratch/sd/a/anirudh6/cs5220/project/ring_allreduce
+
+=== Starting run: nranks=1 ===
+date:        Tue Apr 21 07:36:15 AM PDT 2026
+host:        nid004291
+nranks:      1
+algorithm:   ring_allreduce
+binary:      /pscratch/sd/a/anirudh6/cs5220/project/ring_allreduce
+outfile:     /pscratch/sd/a/anirudh6/cs5220/project/results/ring_allreduce_nranks1_20260421_073615.out
+
+=== Training ===
+Loading MNIST...
+Loaded.
+
+=== Ring All-Reduce run ===
+nranks:        1
+global_batch:  256
+local_batch:   256
+epochs:        10
+lr:            0.01
+momentum:      0.9
+
+grad_buf_size: 2913290 floats = 11.1133 MB
+
+epoch,loss,test_acc,fwd_s,bwd_s,allreduce_s,sgd_s,epoch_s,grad_norm,comm_fraction,bytes_per_rank
+1,0.570751,0.9316,59.6742,183.797,0,0.435744,244.204,0.94417,0,0
+2,0.222216,0.9463,59.6716,183.918,0,0.432492,244.304,0.723261,0,0
+3,0.164649,0.957,59.6702,183.881,0,0.433269,244.262,0.708404,0,0
+4,0.128856,0.9627,59.6918,183.947,0,0.474521,244.39,0.804862,0,0
+5,0.106917,0.9664,59.6644,183.891,0,0.472693,244.305,0.678791,0,0
+6,0.0883953,0.9696,59.6675,183.931,0,0.473314,244.35,0.633029,0,0
+7,0.0745706,0.9712,59.6794,183.886,0,0.472752,244.316,0.719208,0,0
+8,0.0633345,0.9735,59.6885,183.952,0,0.473457,244.392,0.898372,0,0
+9,0.0543313,0.9761,59.6684,183.887,0,0.472889,244.306,0.653962,0,0
+10,0.0478054,0.9792,59.6757,183.929,0,0.474308,244.356,0.780683,0,0
+
+=== Done: nranks=1 ===
+Saved: /pscratch/sd/a/anirudh6/cs5220/project/results/ring_allreduce_nranks1_20260421_073615.out
+
+=== Starting run: nranks=2 ===
+date:        Tue Apr 21 08:48:28 AM PDT 2026
+host:        nid004291
+nranks:      2
+algorithm:   ring_allreduce
+binary:      /pscratch/sd/a/anirudh6/cs5220/project/ring_allreduce
+outfile:     /pscratch/sd/a/anirudh6/cs5220/project/results/ring_allreduce_nranks2_20260421_073615.out
+
+=== Training ===
+Loading MNIST...
+Loaded.
+
+=== Ring All-Reduce run ===
+nranks:        2
+global_batch:  256
+local_batch:   128
+epochs:        10
+lr:            0.01
+momentum:      0.9
+
+grad_buf_size: 2913290 floats = 11.1133 MB
+
+epoch,loss,test_acc,fwd_s,bwd_s,allreduce_s,sgd_s,epoch_s,grad_norm,comm_fraction,bytes_per_rank
+1,0.444798,0.9446,29.9032,92.0729,0.268319,0.467812,123.283,1.43589,0.00217644,2.72684e+09
+2,0.167086,0.9597,29.8827,92.0661,0.277147,0.446132,123.24,1.12167,0.00224885,2.72684e+09
+3,0.110934,0.9705,29.9263,92.1473,0.250602,0.445531,123.335,1.20858,0.00203188,2.72684e+09
+4,0.0765756,0.9746,29.9015,92.087,0.229768,0.463907,123.249,1.42827,0.00186425,2.72684e+09
+5,0.0629653,0.9754,29.9176,92.0975,0.224019,0.465159,123.27,1.15144,0.0018173,2.72684e+09
+6,0.0490873,0.9758,29.8935,92.0808,0.239015,0.466524,123.246,1.07582,0.00193933,2.72684e+09
+7,0.038069,0.9761,29.8949,92.0742,0.222192,0.463635,123.222,1.19009,0.00180319,2.72684e+09
+8,0.029533,0.9786,29.905,92.0924,0.230926,0.462649,123.259,1.33302,0.00187351,2.72684e+09
+9,0.0237038,0.9787,29.9017,92.063,0.250331,0.466473,123.246,1.19941,0.00203114,2.72684e+09
+10,0.0190813,0.98,29.8969,92.0794,0.29107,0.462025,123.296,1.13243,0.00236075,2.72684e+09
+
+=== Done: nranks=2 ===
+Saved: /pscratch/sd/a/anirudh6/cs5220/project/results/ring_allreduce_nranks2_20260421_073615.out
+
+=== Starting run: nranks=4 ===
+date:        Tue Apr 21 09:33:35 AM PDT 2026
+host:        nid004291
+nranks:      4
+algorithm:   ring_allreduce
+binary:      /pscratch/sd/a/anirudh6/cs5220/project/ring_allreduce
+outfile:     /pscratch/sd/a/anirudh6/cs5220/project/results/ring_allreduce_nranks4_20260421_073615.out
+
+=== Training ===
+Loading MNIST...
+Loaded.
+
+=== Ring All-Reduce run ===
+nranks:        4
+global_batch:  256
+local_batch:   64
+epochs:        10
+lr:            0.01
+momentum:      0.9
+
+grad_buf_size: 2913290 floats = 11.1133 MB
+
+epoch,loss,test_acc,fwd_s,bwd_s,allreduce_s,sgd_s,epoch_s,grad_norm,comm_fraction,bytes_per_rank
+1,0.355519,0.96,14.9394,46.2102,0.534021,0.452208,62.6776,2.4138,0.00852013,4.09026e+09
+2,0.117607,0.9716,14.9345,46.1831,0.499344,0.44277,62.5994,1.93906,0.00797682,4.09026e+09
+3,0.0743438,0.9736,14.9676,46.249,0.613211,0.440601,62.8147,2.15306,0.00976223,4.09026e+09
+4,0.0475124,0.9763,14.9405,46.1766,0.584955,0.450996,62.6919,2.53543,0.00933063,4.09026e+09
+5,0.0359698,0.9793,14.9359,46.1745,0.471192,0.451886,62.5748,2.07188,0.00753006,4.09026e+09
+6,0.027194,0.9789,14.9377,46.1697,0.47994,0.455427,62.5843,1.85393,0.00766869,4.09026e+09
+7,0.0169084,0.9799,14.9555,46.24,0.574702,0.456407,62.7703,1.33327,0.00915564,4.09026e+09
+8,0.0126907,0.98,14.9364,46.1578,0.55255,0.454704,62.6405,1.43564,0.00882097,4.09026e+09
+9,0.0105771,0.9817,14.9404,46.1775,0.538557,0.459958,62.6591,1.02443,0.00859504,4.09026e+09
+10,0.00647532,0.9808,14.9333,46.1697,0.461951,0.460373,62.5656,1.60906,0.00738347,4.09026e+09
+
+=== Done: nranks=4 ===
+Saved: /pscratch/sd/a/anirudh6/cs5220/project/results/ring_allreduce_nranks4_20260421_073615.out
+
+All ring runs complete. Results in: /pscratch/sd/a/anirudh6/cs5220/project/results
