@@ -1,0 +1,11 @@
+=== Starting run: nranks=4 ===
+date:        Wed Apr 22 06:46:07 PM PDT 2026
+host:        nid004280
+nranks:      4
+binary:      /global/homes/n/nile/CS5220_project/cs5220-project/tree_allreduce
+outfile:     /global/homes/n/nile/CS5220_project/cs5220-project/results/tree_allreduce_nranks4_20260422_174812.out
+
+=== Training ===
+srun: error: Unable to create step for job 51908167: Job/step already completing or completed
+
+=== Done: nranks=4 ===

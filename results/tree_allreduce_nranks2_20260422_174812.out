@@ -1,0 +1,12 @@
+=== Starting run: nranks=2 ===
+date:        Wed Apr 22 06:46:07 PM PDT 2026
+host:        nid004280
+nranks:      2
+binary:      /global/homes/n/nile/CS5220_project/cs5220-project/tree_allreduce
+outfile:     /global/homes/n/nile/CS5220_project/cs5220-project/results/tree_allreduce_nranks2_20260422_174812.out
+
+=== Training ===
+srun: warning: can't run 2 processes on 4 nodes, setting nnodes to 2
+srun: error: Unable to create step for job 51908167: Job/step already completing or completed
+
+=== Done: nranks=2 ===

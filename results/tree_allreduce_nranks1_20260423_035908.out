@@ -1,0 +1,37 @@
+=== Starting run: nranks=1 ===
+date:        Thu Apr 23 03:59:08 AM PDT 2026
+host:        nid004895
+nranks:      1
+binary:      /global/u2/n/nile/CS5220_project/cs5220-project/tree_allreduce
+outfile:     /global/u2/n/nile/CS5220_project/cs5220-project/results/tree_allreduce_nranks1_20260423_035908.out
+
+=== Training ===
+srun: warning: can't run 1 processes on 16 nodes, setting nnodes to 1
+Loading MNIST...
+Loaded.
+
+=== Tree All-Reduce run ===
+nranks:         1
+global_batch:   256
+local_batch:    256
+algorithm:      binary tree (reduce + broadcast)
+tree_steps:     0 reduce + 0 broadcast = 0 total
+epochs:         10
+lr:             0.01
+momentum:       0.9
+
+grad_buf_size:  2913290 floats = 11.1133 MB
+
+epoch,loss,test_acc,fwd_s,bwd_s,allreduce_s,sgd_s,epoch_s,grad_norm,speedup,efficiency
+1,0.570751,0.9316,59.7675,184.052,0.363219,0.534147,244.739,0.94417,0,0
+2,0.222216,0.9463,59.7755,183.984,0.363085,0.533661,244.677,0.723261,0,0
+3,0.164649,0.957,59.7687,184.007,0.36327,0.536167,244.696,0.708404,0,0
+4,0.128856,0.9627,59.7854,184.04,0.362934,0.57598,244.785,0.804862,0,0
+5,0.106917,0.9664,59.7666,184.011,0.351583,0.563743,244.714,0.678791,0,0
+6,0.0883953,0.9696,59.7619,184.017,0.351382,0.563252,244.714,0.633029,0,0
+7,0.0745706,0.9712,59.7656,184.009,0.351469,0.563783,244.711,0.719208,0,0
+8,0.0633345,0.9735,59.762,184.035,0.351597,0.564339,244.734,0.898372,0,0
+9,0.0543313,0.9761,59.7585,184.011,0.351638,0.563184,244.705,0.653962,0,0
+10,0.0478054,0.9792,59.7441,184.026,0.351506,0.56392,244.707,0.780683,0,0
+
+=== Done: nranks=1 ===

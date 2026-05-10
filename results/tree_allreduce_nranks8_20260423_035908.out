@@ -1,0 +1,34 @@
+=== Starting run: nranks=8 ===
+date:        Thu Apr 23 06:32:54 AM PDT 2026
+host:        nid004895
+nranks:      8
+binary:      /global/u2/n/nile/CS5220_project/cs5220-project/tree_allreduce
+outfile:     /global/u2/n/nile/CS5220_project/cs5220-project/results/tree_allreduce_nranks8_20260423_035908.out
+
+=== Training ===
+srun: warning: can't run 8 processes on 16 nodes, setting nnodes to 8
+Loading MNIST...
+Loaded.
+
+=== Tree All-Reduce run ===
+nranks:         8
+global_batch:   256
+local_batch:    32
+algorithm:      binary tree (reduce + broadcast)
+tree_steps:     3 reduce + 3 broadcast = 6 total
+epochs:         10
+lr:             0.01
+momentum:       0.9
+
+grad_buf_size:  2913290 floats = 11.1133 MB
+
+epoch,loss,test_acc,fwd_s,bwd_s,allreduce_s,sgd_s,epoch_s,grad_norm,speedup,efficiency
+1,0.557641,0.9316,7.51846,23.3377,2.63963,0.903673,34.4043,0.944823,0,0
+2,0.232373,0.9463,7.51852,23.3158,2.51368,0.884527,34.2363,0.723728,0,0
+3,0.166087,0.957,7.51712,23.3138,2.52862,0.883558,34.2466,0.712936,0,0
+4,0.136487,0.9625,7.50945,23.3228,2.52304,0.920219,34.2791,0.806844,0,0
+5,0.0993372,0.9661,7.50767,23.3236,2.52154,0.919025,34.2757,0.677558,0,0
+6,0.0878422,0.9695,7.51761,23.3176,2.5264,0.919852,34.285,0.629853,0,0
+7,0.0745574,0.9708,7.51014,23.3057,2.53197,0.920914,34.2722,0.713818,0,0
+8,0.0652877,0.9739,7.50338,23.3069,2.54213,0.917583,34.2736,0.889978,0,0
+[2026-04-23T13:59:19.862] error: *** STEP 51914888.3 ON nid004995 CANCELLED AT 2026-04-23T13:59:19 DUE TO TIME LIMIT ***
